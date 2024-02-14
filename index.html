@@ -14,16 +14,19 @@
             height: 100vh;
             margin: 0;
             display: flex;
-            justify-content: center;
+            flex-direction: column; /* 垂直排列 */
+            justify-content: flex-end; /* 元素位於垂直底部 */
             align-items: center;
             text-align: center;
             background-color: rgba(255, 255, 255, 0.5);
             color: white;
+            position: relative; /* 設置文字相對定位 */
         }
         p {
             position: relative;
             display: inline-block; /* 將文字設置為區塊元素，使其獨立佔據一行 */
             font-weight: bold; /* 將文字設置為粗體 */
+            margin-top: 10px; /* 與影片的間距 */
         }
         p::after {
             content: ""; /* 必須有內容才能正確渲染伪元素 */
@@ -36,23 +39,29 @@
             height: 100%;
             z-index: -1; /* 確保浮水印背景位於文字後面 */
         }
-        img {
-            display: block; /* 將圖片設置為區塊元素，使其獨立佔據一行 */
+        img.left-bottom {
+            position: absolute; /* 設置影片的絕對定位 */
+            bottom: 10px; /* 與底部的距離 */
+            left: 10px; /* 與左邊的距離 */
+        }
+        img.right-bottom {
+            position: absolute; /* 設置影片的絕對定位 */
+            bottom: 10px; /* 與底部的距離 */
+            right: 10px; /* 與右邊的距離 */
         }
         video {
-            position: absolute; /* 設置影片的絕對定位 */
-            top: 10px; /* 與頂部的距離 */
-            left: 10px; /* 與左邊的距離 */
+            position: relative; /* 影片相對定位 */
+            margin-bottom: 20px; /* 與底部文字的間距 */
         }
     </style>
 </head>
 <body>
-    <video width="320" height="240" controls autoplay loop>
+    <video width="320" height="240" controls>
         <source src="壓縮.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
-    <img src="YCC.jpg" alt="一個示例圖片">
+    <img src="YCC.jpg" alt="一個示例圖片" class="left-bottom">
     <p>YCC好笨。雖然不會用Discord， 但還是認真學的樣子真的很帥喔</p>
-    <img src="YCC2.jpg" alt="您的第二張圖片描述">
+    <img src="YCC2.jpg" alt="您的第二張圖片描述" class="right-bottom">
 </body>
 </html>
