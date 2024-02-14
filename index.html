@@ -18,16 +18,15 @@
             justify-content: flex-end; /* 元素位於下方 */
             align-items: center;
             text-align: center;
-            background-color: rgba(255, 255, 255, 0.5);
+            padding: 20px; /* 增加內邊距 */
             color: white;
             position: relative; /* 設置文字相對定位 */
-            padding: 20px; /* 增加內邊距 */
         }
         h1 {
             position: fixed; /* 將標題置頂 */
             top: 0; /* 將標題置頂 */
             width: 100%; /* 將標題置頂 */
-            background-color: rgba(255, 255, 255, 0.8); /* 標題背景色 */
+            background: linear-gradient(to right, pink, #ff1493); /* 標題粉紅漸層背景 */
             padding: 10px 0; /* 標題內邊距 */
             margin: 0; /* 標題外邊距 */
             z-index: 999; /* 標題堆疊順序 */
@@ -36,6 +35,9 @@
             font-weight: bold; /* 將文字設置為粗體 */
             margin-top: 30px; /* 與上方的間距 */
             margin-right: auto;
+            background-color: white; /* 文字背景色 */
+            padding: 10px; /* 文字內邊距 */
+            position: relative; /* 設置文字相對定位 */
         }
         p::after {
             content: ""; /* 必須有內容才能正確渲染伪元素 */
@@ -64,26 +66,4 @@
         .images {
             display: flex;
             flex-wrap: wrap; /* 允許圖片換行 */
-            justify-content: flex-start; /* 最下排圖片靠左對齊 */
-        }
-        img[src="YCC2.jpg"] {
-            height: 75px; /* 將YCC2圖片的高度設置為75px */
-        }
-    </style>
-</head>
-<body>
-    <h1>拿不到紅的美女</h1>
-    <video controls>
-        <source src="壓縮.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-    <p>雖然都是被詐騙進群組的，但遇到各位真的還蠻開心的，希望未來還能夠多多指教!!</p>
-    <div class="images">
-        <img src="YCC.jpg" alt="一個示例圖片">
-        <img src="Pu1.jpg" alt="新圖片1">
-        <img src="Pu3.jpg" alt="新圖片2">
-        <img src="YCC2.jpg" alt="您的第二張圖片描述">
-        <p>小弟不才，能力有限，時間有限，頭髮有限，為了避免小弟禿頭，就先做到這吧♀</p>
-    </div>
-</body>
-</html>
+            justify-content: flex-start; /* 最下排圖片靠左對
