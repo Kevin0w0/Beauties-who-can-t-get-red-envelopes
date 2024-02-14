@@ -41,14 +41,17 @@
         video {
             width: 320px; /* 設置影片寬度 */
             height: 240px; /* 設置影片高度 */
+            margin-right: auto; /* 影片右邊距設為自動，使其置於左邊 */
             margin-bottom: 10px; /* 影片下邊距 */
-            align-self: flex-start; /* 將影片靠左對齊 */
         }
         img {
             width: 200px; /* 設置圖片寬度 */
             height: auto; /* 根據寬度自動調整高度 */
-            margin-right: 10px; /* 圖片右邊距 */
             margin-bottom: 10px; /* 圖片下邊距 */
+        }
+        .images {
+            display: flex;
+            justify-content: center;
         }
     </style>
 </head>
@@ -58,9 +61,11 @@
         Your browser does not support the video tag.
     </video>
     <p>YCC好笨。雖然不會用Discord， 但還是認真學的樣子真的很帥喔</p>
-    <img src="YCC.jpg" alt="一個示例圖片">
-    <img src="YCC2.jpg" alt="您的第二張圖片描述">
-    <img src="new_image1.jpg" alt="新圖片1">
-    <img src="new_image2.jpg" alt="新圖片2">
+    <div class="images">
+        <img src="YCC.jpg" alt="一個示例圖片">
+        <img src="YCC2.jpg" alt="您的第二張圖片描述">
+        <img src="new_image1.jpg" alt="新圖片1">
+        <img src="new_image2.jpg" alt="新圖片2">
+    </div>
 </body>
 </html>
