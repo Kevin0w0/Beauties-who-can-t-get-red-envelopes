@@ -24,7 +24,19 @@
             left: 100px; /* 將文字向右移動 20 像素 */
         }
         p {
-            display: block; /* 將文字設置為區塊元素，使其獨立佔據一行 */
+            position: relative;
+            display: inline-block; /* 將文字設置為區塊元素，使其獨立佔據一行 */
+        }
+        p::after {
+            content: ""; /* 必須有內容才能正確渲染伪元素 */
+            background-image: url('watermark-text.png'); /* 指定浮水印文字的背景圖片 */
+            opacity: 0.2; /* 設置浮水印文字的透明度 */
+            position: absolute; /* 設置為絕對定位，相對於父元素 p 來定位 */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* 確保浮水印背景位於文字後面 */
         }
         img {
             display: block; /* 將圖片設置為區塊元素，使其獨立佔據一行 */
@@ -32,9 +44,8 @@
     </style>
 </head>
 <body>
-    <p>YCC好笨。雖然不會用Discord，
-        但還是認真學的樣子真的很帥喔</p>
     <img src="YCC.jpg" alt="一個示例圖片">
+    <p>YCC好笨。雖然不會用Discord，但還是認真學的樣子真的很帥喔</p>
     <img src="YCC2.jpg" alt="您的第二張圖片描述">
 </body>
 </html>
