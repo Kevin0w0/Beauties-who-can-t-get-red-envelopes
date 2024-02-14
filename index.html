@@ -81,11 +81,28 @@
             font-weight: bold; /* 設置為粗體 */
         }
         .footer-link a {
-            color: fluorescent blue; /* 設置連結文字顏色為白色 */
+            color: white; /* 設置連結文字顏色為白色 */
             text-decoration: none; /* 移除連結下劃線 */
         }
         .footer-link a:hover {
             text-decoration: underline; /* 滑鼠懸停時添加下劃線 */
+        }
+        .chat-bubble {
+            position: relative;
+            display: inline-block;
+            background-color: #aaf;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .chat-bubble::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -20px;
+            border: 10px solid transparent;
+            border-right-color: #aaf;
         }
     </style>
 </head>
@@ -101,7 +118,10 @@
         <img src="Pu1.jpg" alt="新圖片1">
         <img src="Pu3.jpg" alt="新圖片2">
         <img src="YCC2.jpg" alt="您的第二張圖片描述">
-        <p>小弟不才，能力有限，時間有限，頭髮有限，為了避免小弟禿頭，就先做到這吧♀</p>
+        <div class="chat-bubble">好學的美女</div>
+        <img src="謙虛的美女.jpg" alt="新圖片3">
+        <img src="低吸大師.jpg" alt="新圖片4">
+        <img src="小黃光.jpg" alt="新圖片5">
     </div>
     <div class="footer-link">
         <a href="https://discord.gg/WNdXXZnm" target="_blank">加入我們的 Discord 群組</a>
