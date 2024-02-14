@@ -54,9 +54,9 @@
             border-radius: 20px; /* 圓弧形背景 */
         }
         video {
-            width: 500px; /* 設置影片寬度 */
-            height: 400px; /* 設置影片高度 */
-            margin-right: auto; /* 影片右邊距設為自動，使其置於左邊 */
+            width: 300px; /* 設置影片寬度 */
+            height: 240px; /* 設置影片高度 */
+            margin-right: 20px; /* 影片右邊距設為20px */
             margin-bottom: 20px; /* 影片下邊距 */
             margin-top: 150px; /* 調整影片上邊距 */
         }
@@ -91,10 +91,13 @@
             text-align: left; /* 將連結文字靠左對齊 */
             font-size: 18px; /* 調整字體大小 */
             font-weight: bold; /* 設置為粗體 */
+            display: flex; /* 使用彈性盒子模型 */
+            align-items: center; /* 垂直居中 */
         }
         .footer-link a {
             color: white; /* 設置連結文字顏色為白色 */
             text-decoration: none; /* 移除連結下劃線 */
+            margin-right: 20px; /* 右邊距 */
         }
         .footer-link a:hover {
             text-decoration: underline; /* 滑鼠懸停時添加下劃線 */
@@ -103,10 +106,13 @@
 </head>
 <body>
     <h1>拿不到紅包的美女</h1>
-    <video controls>
-        <source src="壓縮.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+    <div class="footer-link">
+        <a href="https://discord.gg/WNdXXZnm" target="_blank">加入我們的 Discord 群組</a>
+        <video controls>
+            <source src="壓縮.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
     <p>雖然都是被詐騙進群組的，但遇到各位真的還蠻開心的，希望未來還能夠多多指教!!</p>
     <div class="images">
         <img src="YCC.jpg" alt="一個示例圖片">
@@ -118,8 +124,6 @@
         <img src="小黃光.jpg" alt="新圖片5">
     </div>
     <div class="footer-link">
-        <a href="https://discord.gg/WNdXXZnm" target="_blank">加入我們的 Discord 群組</a>
-        <br>
         <a href="新影片.mp4" target="_blank">查看新影片</a>
     </div>
 </body>
