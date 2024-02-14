@@ -6,62 +6,55 @@
     <title>YCC好笨。雖然不會用Discord但還是認真學的樣子真的很帥喔</title>
     <style>
         body {
-            background-image: url('Pu4.jpg');
-            background-size: cover;
-            background-repeat: repeat;
-            background-attachment: fixed;
-            background-position: center center;
+            background-image: url('Pu4.jpg'); /* 指定浮水印圖片的路徑 */
+            background-size: cover; /* 設置背景圖片大小，cover表示覆蓋整個視窗 */
+            background-repeat: repeat; /* 設置背景圖片重複方式，repeat表示平鋪 */
+            background-attachment: fixed; /* 設置背景圖片固定，使其在視窗捲動時保持固定位置 */
+            background-position: center center; /* 設置背景圖片位置，置中 */
             height: 100vh;
             margin: 0;
             display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            align-items: center;
-            text-align: center;
+            justify-content: flex-start; /* 元素位於左邊 */
+            align-items: flex-start; /* 元素位於上方 */
+            text-align: left; /* 文字靠左對齊 */
             background-color: rgba(255, 255, 255, 0.5);
             color: white;
-            position: relative;
+            position: relative; /* 設置文字相對定位 */
+            padding: 20px; /* 增加內邊距 */
         }
         p {
-            position: relative;
-            display: inline-block;
-            font-weight: bold;
-            margin-top: 10px;
+            font-weight: bold; /* 將文字設置為粗體 */
+            margin-top: 10px; /* 與上方的間距 */
         }
         p::after {
-            content: "";
-            background-image: url('watermark-text.png');
-            opacity: 0.2;
-            position: absolute; 
+            content: ""; /* 必須有內容才能正確渲染伪元素 */
+            background-image: url('watermark-text.png'); /* 指定浮水印文字的背景圖片 */
+            opacity: 0.2; /* 設置浮水印文字的透明度 */
+            position: absolute; /* 設置為絕對定位，相對於父元素 p 來定位 */
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            z-index: -1;
-        }
-        img.left-bottom {
-            position: absolute; 
-            bottom: 10px;
-            left: 10px; 
-        }
-        img.right-bottom {
-            position: absolute;
-            bottom: 10px;
-            right: 10px;
+            z-index: -1; /* 確保浮水印背景位於文字後面 */
         }
         video {
-            position: relative; 
-            margin-bottom: 20px; 
+            width: 320px; /* 設置影片寬度 */
+            height: 240px; /* 設置影片高度 */
+            margin-right: 20px; /* 影片右邊距 */
+            margin-bottom: 10px; /* 影片下邊距 */
+        }
+        img {
+            margin-bottom: 10px; /* 圖片下邊距 */
         }
     </style>
 </head>
 <body>
-    <video width="320" height="240" controls>
+    <video controls>
         <source src="壓縮.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
-    <img src="YCC.jpg" alt="一個示例圖片" class="left-bottom">
+    <img src="YCC.jpg" alt="一個示例圖片">
     <p>YCC好笨。雖然不會用Discord， 但還是認真學的樣子真的很帥喔</p>
-    <img src="YCC2.jpg" alt="您的第二張圖片描述" class="right-bottom">
+    <img src="YCC2.jpg" alt="您的第二張圖片描述">
 </body>
 </html>
