@@ -49,12 +49,12 @@
             width: 150px; 
             height: auto; 
             margin: 0 10px 10px 0; /* 圖片間的邊距 */
-            margin-left: 50px;
+            margin-left: 0; /* 最下排圖片靠左 */
         }
         .images {
             display: flex;
             flex-wrap: wrap; /* 允許圖片換行 */
-            justify-content: center;
+            justify-content: flex-start; /* 最下排圖片靠左對齊 */
         }
         img[src="YCC2.jpg"] {
             height: 75px; /* 將YCC2圖片的高度設置為75px */
