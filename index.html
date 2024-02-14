@@ -19,9 +19,6 @@
             text-align: center;
             background-color: rgba(255, 255, 255, 0.5);
             color: red;
-            position: relative; /* 設置文字相對定位 */
-            top: 300px; /* 將文字向下移動 50 像素 */
-            left: 100px; /* 將文字向右移動 20 像素 */
         }
         p {
             position: relative;
@@ -42,13 +39,20 @@
         img {
             display: block; /* 將圖片設置為區塊元素，使其獨立佔據一行 */
         }
+        video {
+            position: absolute; /* 設置影片的絕對定位 */
+            top: 10px; /* 與頂部的距離 */
+            left: 10px; /* 與左邊的距離 */
+        }
     </style>
 </head>
 <body>
+    <video width="320" height="240" controls autoplay loop>
+        <source src="壓縮.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
     <img src="YCC.jpg" alt="一個示例圖片">
-    
     <p>YCC好笨。雖然不會用Discord， 但還是認真學的樣子真的很帥喔</p>
-    
     <img src="YCC2.jpg" alt="您的第二張圖片描述">
 </body>
 </html>
