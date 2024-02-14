@@ -61,8 +61,6 @@
             margin-top: 150px; /* 調整影片上邊距 */
         }
         img {
-            width: 150px; 
-            height: auto; 
             margin: 0 10px 10px 0; /* 圖片間的邊距 */
             margin-left: 20px; /* 最下排圖片靠左 */
         }
@@ -71,8 +69,21 @@
             flex-wrap: wrap; /* 允許圖片換行 */
             justify-content: flex-start; /* 最下排圖片靠左對齊 */
         }
-        img[src="YCC2.jpg"] {
-            height: 75px; /* 將YCC2圖片的高度設置為75px */
+        img[src="YCC2.jpg"],
+        img[src="謙虛的美女.jpg"],
+        img[src="低吸大師.jpg"],
+        img[src="小黃光.jpg"] {
+            height: 75px; /* 調整高度 */
+        }
+        img[src="謙虛的美女.jpg"] {
+            width: 157px; /* 調整寬度 */
+            border-radius: 0; /* 取消圓角 */
+        }
+        img[src="低吸大師.jpg"] {
+            width: 75px; /* 調整寬度 */
+        }
+        img[src="小黃光.jpg"] {
+            width: 120px; /* 調整寬度 */
         }
         .footer-link {
             margin-top: 20px; /* 新增連結的上邊距 */
