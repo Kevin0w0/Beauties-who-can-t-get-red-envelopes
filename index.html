@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>領不到紅包群的美女</title>
+    <title>拿不到紅的美女</title>
     <style>
         body {
             background-image: url('Pu4.jpg'); /* 指定浮水印圖片的路徑 */
@@ -19,9 +19,18 @@
             align-items: center;
             text-align: center;
             background-color: rgba(255, 255, 255, 0.5);
-            color: black;
+            color: white;
             position: relative; /* 設置文字相對定位 */
             padding: 20px; /* 增加內邊距 */
+        }
+        h1 {
+            position: fixed; /* 將標題置頂 */
+            top: 0; /* 將標題置頂 */
+            width: 100%; /* 將標題置頂 */
+            background-color: rgba(255, 255, 255, 0.8); /* 標題背景色 */
+            padding: 10px 0; /* 標題內邊距 */
+            margin: 0; /* 標題外邊距 */
+            z-index: 999; /* 標題堆疊順序 */
         }
         p {
             font-weight: bold; /* 將文字設置為粗體 */
@@ -62,6 +71,7 @@
     </style>
 </head>
 <body>
+    <h1>拿不到紅的美女</h1>
     <video controls>
         <source src="壓縮.mp4" type="video/mp4">
         Your browser does not support the video tag.
