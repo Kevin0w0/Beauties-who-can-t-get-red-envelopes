@@ -6,52 +6,52 @@
     <title>YCC好笨。雖然不會用Discord但還是認真學的樣子真的很帥喔</title>
     <style>
         body {
-            background-image: url('Pu4.jpg'); /* 指定浮水印圖片的路徑 */
-            background-size: cover; /* 設置背景圖片大小，cover表示覆蓋整個視窗 */
-            background-repeat: repeat; /* 設置背景圖片重複方式，repeat表示平鋪 */
-            background-attachment: fixed; /* 設置背景圖片固定，使其在視窗捲動時保持固定位置 */
-            background-position: center center; /* 設置背景圖片位置，置中 */
+            background-image: url('Pu4.jpg');
+            background-size: cover;
+            background-repeat: repeat;
+            background-attachment: fixed;
+            background-position: center center;
             height: 100vh;
             margin: 0;
             display: flex;
-            flex-direction: column; /* 垂直排列 */
-            justify-content: flex-end; /* 元素位於垂直底部 */
+            flex-direction: column;
+            justify-content: flex-end;
             align-items: center;
             text-align: center;
             background-color: rgba(255, 255, 255, 0.5);
             color: white;
-            position: relative; /* 設置文字相對定位 */
+            position: relative;
         }
         p {
             position: relative;
-            display: inline-block; /* 將文字設置為區塊元素，使其獨立佔據一行 */
-            font-weight: bold; /* 將文字設置為粗體 */
-            margin-top: 10px; /* 與影片的間距 */
+            display: inline-block;
+            font-weight: bold;
+            margin-top: 10px;
         }
         p::after {
-            content: ""; /* 必須有內容才能正確渲染伪元素 */
-            background-image: url('watermark-text.png'); /* 指定浮水印文字的背景圖片 */
-            opacity: 0.2; /* 設置浮水印文字的透明度 */
-            position: absolute; /* 設置為絕對定位，相對於父元素 p 來定位 */
+            content: "";
+            background-image: url('watermark-text.png');
+            opacity: 0.2;
+            position: absolute; 
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            z-index: -1; /* 確保浮水印背景位於文字後面 */
+            z-index: -1;
         }
         img.left-bottom {
-            position: absolute; /* 設置影片的絕對定位 */
-            bottom: 10px; /* 與底部的距離 */
-            left: 10px; /* 與左邊的距離 */
+            position: absolute; 
+            bottom: 10px;
+            left: 10px; 
         }
         img.right-bottom {
-            position: absolute; /* 設置影片的絕對定位 */
-            bottom: 10px; /* 與底部的距離 */
-            right: 10px; /* 與右邊的距離 */
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
         }
         video {
-            position: relative; /* 影片相對定位 */
-            margin-bottom: 20px; /* 與底部文字的間距 */
+            position: relative; 
+            margin-bottom: 20px; 
         }
     </style>
 </head>
