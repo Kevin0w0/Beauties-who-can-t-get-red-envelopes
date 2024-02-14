@@ -74,14 +74,16 @@
         }
         .footer-link {
             margin-top: 20px; /* 新增連結的上邊距 */
+            text-align: left; /* 將連結文字靠左對齊 */
+            font-size: 18px; /* 調整字體大小 */
+            font-weight: bold; /* 設置為粗體 */
         }
-        /* 圓形圖片 */
-        img[src="YCC.jpg"] {
-            border-radius: 50%; /* 設置圓形圖片 */
+        .footer-link a {
+            color: white; /* 設置連結文字顏色為白色 */
+            text-decoration: none; /* 移除連結下劃線 */
         }
-        /* 愛心型圖片 */
-        img[src="Pu1.jpg"] {
-            clip-path: polygon(50% 0%, 100% 35%, 85% 100%, 50% 65%, 15% 100%, 0% 35%); /* 設置愛心型 */
+        .footer-link a:hover {
+            text-decoration: underline; /* 滑鼠懸停時添加下劃線 */
         }
     </style>
 </head>
@@ -100,7 +102,7 @@
         <p>小弟不才，能力有限，時間有限，頭髮有限，為了避免小弟禿頭，就先做到這吧♀</p>
     </div>
     <div class="footer-link">
-        <a href="#">https://discord.gg/WNdXXZnm</a>
+        <a href="https://discord.gg/WNdXXZnm" target="_blank">加入我們的 Discord 群組</a>
     </div>
 </body>
 </html>
